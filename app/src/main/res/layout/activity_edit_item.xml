@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addItem">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="修改事件"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="名称"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edit_item_detil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="描述"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_item_change"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="修改" />
+
+    <Button
+        android:id="@+id/edit_item_delete"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:text="删除" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/edit_item_show_time"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/edit_item_btn_time"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="选择时间" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/edit_item_show_date"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/edit_item_btn_date"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="选择日期" />
+    </LinearLayout>
+
+</LinearLayout>
